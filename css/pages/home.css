@@ -65,8 +65,11 @@
   grid-area: img;
 }
 .person-section>.centraliza-conteudo figure img{
+  max-width: 410px;
+  max-height: 510px;
   border: 5px solid var(--background-white);
   border-radius: 5px;
+  aspect-ratio: 1.91/1;
 }
 
 
@@ -135,4 +138,9 @@
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
   }
+  .person-section>.centraliza-conteudo figure img{
+    width: 310px;
+    height: 410px;
+  }
+
 }
