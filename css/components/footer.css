@@ -1,0 +1,105 @@
+/* variáveis globais*/
+:root{
+  --primary-color: #5a933c;
+  --primary-color-black: #48762e;
+  --secundary-color: #354d2a;
+  --background-light: #ecf0f1;
+  --background-white: #fff;
+  --text-black: #333;
+  --text-gray: #777;
+  --tittle-size: 2rem;
+  --subtittle-size: 1.5rem;
+  --normal-text-size: 1rem;
+  --small-text-size: 0.875rem;
+}
+
+/*footer style*/
+.footer-configution .centraliza-conteudo{
+  margin: 0 auto;
+}
+.separacao{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 300ms ease-in-out;
+}
+.footer-content p{
+  color: var(--text-gray);
+  font-weight: 700;
+}
+.footer-content h3{
+  color: var(--background-white);
+  font-weight: 700;
+  font-size: var(--subtittle-size);
+  margin-bottom: var(--small-text-size);
+}
+.footer-content hr{
+  width: 60px;
+  border: 1px solid var(--primary-color-black);
+}
+.footer-content ul a, .footer-configution ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-text-size);
+  text-decoration: none;
+  color: var(--text-gray);
+  font-weight: 700;
+  transition: all 250ms ease-in;
+}
+.footer-content ul li a:hover{
+  padding-left: 5px;
+  color: var(--primary-color-black);
+}
+
+.footer-configution .centraliza-conteudo>p{
+  width: 100%;
+  color: var(--text-gray);
+  padding: 2rem;
+  text-align: center;
+  border-top: solid 2px  var(--text-gray);
+}
+
+.footer-configution figure a{
+  text-decoration: none;
+  margin-right: 1rem;
+  position: relative;
+  font-size: 1rem;
+  padding: var(--small-text-size);
+  border-radius: 100%;
+  background-color: #7777778e;
+  transition: all 250ms ease-in;
+}
+.footer-configution figure a:hover{
+  bottom: 2px;
+  background-color: var(--primary-color-black);
+}
+.footer-configution a>.bi{
+  color: white;
+  font-size: 1rem;
+}
+/*Media query*/
+
+@media screen and (max-width: 992px){
+  .separacao{
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+  }
+}
+@media screen and (max-width: 768px){
+  .separacao{ 
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+  }
+}
+@media screen and (max-width: 576px){
+  .separacao{
+    grid-template-columns: 1fr;
+  }
+}

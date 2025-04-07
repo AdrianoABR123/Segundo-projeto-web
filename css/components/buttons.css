@@ -1,0 +1,97 @@
+/* variáveis globais*/
+:root{
+  --primary-color: #5a933c;
+  --primary-color-black: #48762e;
+  --secundary-color: #354d2a;
+  --background-light: #ecf0f1;
+  --background-white: #fff;
+  --text-black: #333;
+  --text-gray: #777;
+  --tittle-size: 2rem;
+  --subtittle-size: 1.5rem;
+  --normal-text-size: 1rem;
+  --small-text-size: 0.875rem;
+}
+/*Buttons*/
+.button-cards{
+  display: none;
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  color: #6fb649;
+  border: 2px solid #6fb649;
+  transition: all 250ms ease-in;
+}
+.button-text{
+  padding: 0.5rem;
+  text-align: center;
+  font-size: var(--small-text-size);
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-weight: 700;
+  background-color: var(--background-light);
+}
+.button.portfolio{
+  padding: 0.4rem 1.4rem;
+  color: var(--text-black);
+  background-color: transparent;
+  font-size: var(--small-text-size);
+  border-radius: 100px;
+  border: 1px solid var(--text-gray);
+  transition: all 350ms ease-in;
+}
+.button.portfolio.present{
+  background-color: var(--primary-color);
+  border-color: transparent;
+  color: var(--background-white);
+}
+.button.portfolio:hover{
+  background-color: var(--primary-color);
+  border-color: transparent;
+  color: var(--background-white);
+}
+
+.project>.centraliza-conteudo .button-return.link{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.button.return-project{
+  background-color: transparent;
+  font-size: var(--small-text-size);
+  padding: 0.75rem 1rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transform: all 300ms ease-in;
+}
+.button.visite, .button.return-project:hover{
+  text-decoration: 0;
+  font-size: var(--small-text-size);
+  background-color: var(--primary-color);
+  padding: 0.75rem 1rem;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.button.home{
+  width: 10rem;
+  transition: all 250ms ease-in;
+}
+.button.home:hover{
+background-color: var(--primary-color-black);
+}
+
+.button.submit{
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  transition: all 250ms ease-in;
+}
+.button.submit:hover{
+  background-color: var(--primary-color-black);
+}

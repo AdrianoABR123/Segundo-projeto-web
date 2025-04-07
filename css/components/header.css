@@ -1,0 +1,125 @@
+/* variáveis globais*/
+:root{
+  --primary-color: #5a933c;
+  --primary-color-black: #48762e;
+  --secundary-color: #354d2a;
+  --background-light: #ecf0f1;
+  --background-white: #fff;
+  --text-black: #333;
+  --text-gray: #777;
+  --tittle-size: 2rem;
+  --subtittle-size: 1.5rem;
+  --normal-text-size: 1rem;
+  --small-text-size: 0.875rem;
+}
+/*header style*/
+.header-style .centraliza-conteudo{
+  display: flex; /**/
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header-style .centraliza-conteudo figure{
+  display: none;
+}
+.nav-header{
+  display: flex; /*O flex aqui foi utilizado para habilitar a estilização gap, como também conseguir mudar o flex-direction para implementar */
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#menu-checkbox{
+  display: none;
+}
+.nav-header a{
+  color: var(--text-black);
+  font-size: 1.2rem;  
+  text-decoration: none;
+  font-weight: 700;
+}
+.logo{
+  color: var(--secundary-color);
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: 700;
+}
+.hover-header a{
+  margin-bottom: 10px;
+  border-width: 2;
+}
+
+.hover-header hr{
+  margin-top: 8px;
+  border: 1px solid transparent;
+}
+.visited a, .visited hr{
+  color: var(--primary-color);
+  display: block;
+  border-color: var(--primary-color);
+}
+.visited hr{
+  margin-top: 8px;
+}
+
+.hover-header:hover a{
+  color: var(--primary-color);
+}
+.hover-header:hover hr{
+  border-color: var(--primary-color);
+  animation-name: animation-width;
+  animation-duration: 350ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animation-width {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/*Media quiery*/
+@media screen and (max-width: 576px){
+  .header-style .centraliza-conteudo{
+    display: grid;
+    grid-template-areas: "logo menu-hamburguer"
+                          "nav-header .";
+    grid-template-columns: 1fr 1fr;
+    gap: initial;                      
+  }
+  .header-style .centraliza-conteudo figure{
+    display: flex;
+    justify-content: flex-end;
+    grid-area: menu-hamburguer;
+    
+  }
+  
+  .logo{
+    grid-area: logo;
+  }
+  .nav-header{
+    display: none;
+    grid-area: nav-header;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .hover-header hr, .visited hr{
+    display: none;
+  }
+  #menu-checkbox:checked + nav .nav-header{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/form.css">
+    <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body>
+    <div class="content-page">
+        <!-- Header -->
+        <header class="header-style">
+            <div class="centraliza-conteudo">
+                <a href="index.html" class="logo" >Meu<span class="light-green">Portfólio</span></a>
+                <input type="checkbox" name="menu" id="menu-checkbox">
+                <nav>
+                    <ul class="nav-header">
+                        <li class="hover-header"><a href="index.html">Início</a><hr></li>
+                        <li class="hover-header"><a href="portfolio.html">Portfólio</a><hr></li>
+                        <li class="visited"><a href="contato.html">Contato</a><hr></li>
+                    </ul>
+                </nav>
+                <figure>
+                    <label for="menu-checkbox"><span class="material-symbols-outlined">menu</span></label>
+                </figure>
+            </div>
+        </header>
+        <!-- Contact Section -->
+        <main class="main-content contact-section">
+            <div class="centraliza-conteudo">
+                <h1 class="page-title">Entre em Contato</h1>
+                <article class="article-form">
+                    <form action="#" method="POST">
+                        <!-- Criar os elementos do form como informado no layout -->
+                        <label for="name-person" class="label-form">Nome Completo</label>
+                        <input type="text" name="name" id="name-person" class="input text-name" minlength="3" maxlength="50" autocomplete="false" required>
+                        <label for="email" class="label-form">E-mail</label>
+                        <input type="email" name="email" id="email" class="input email" required>
+                        <label for="assuntos" class="label-form">Assunto</label>
+                        <select name="assunto" id="assuntos" class="selection" required>
+                            <option value="selection" selected>Selecione um assunto</option>
+                            <option value="feedback">Oportunidade de Trabalho</option>
+                            <option value="contratacao">Proposta de Projeto</option>
+                            <option value="consultoria">Dúvida</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                        <label for="mensagem" class="label-form">Mensagem</label>
+                        <textarea id="mensagem" class="input text" rows="10" minlength="10" maxlength="500" required></textarea>
+                        <button type="submit" class="button submit">Enviar Mensagem</button>
+                    </form>
+                </article>
+                <article class="article-contact">
+                    <div class="div-contact">
+                        <!-- ícone fa-map-marker-alt -->
+                        <span class="material-symbols-outlined">location_on</span>
+                        <h3>Endereço</h3>
+                        <p>Av. Prof. Luiz Freire, 500 - Cidade Universitária, Recife - PE, 50740-545</p>
+                    </div>
+                    <div class="div-contact">
+                        <!-- ícone fa-envelope -->
+                        <span class="material-symbols-outlined">mail</span>
+                        <h3>E-mail</h3>
+                        <p>contato@meuportfolio.com</p>
+                    </div>
+                    <div class="div-contact">
+                        <!-- ícone fa-phone-alt -->
+                        <span class="material-symbols-outlined">phone_enabled</span>
+                        <h3>Telefone</h3>
+                        <p>(81) 99999-9999</p>
+                    </div>
+                    <!--O iframe do Endereço -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.203437999593!2d-34.95116109917767!3d-8.059913701810746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1be3795f0b73%3A0xead0a588b03786f1!2sInstituto%20Federal%20de%20Pernambuco!5e0!3m2!1spt-BR!2sbr!4v1743275763396!5m2!1spt-BR!2sbr" id="iframe-maps" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Mapa que sua localização aponta para o Institudo Federal de Pernambuco"></iframe>
+                </article>
+            </div>
+         </main>
+        <!-- Footer -->
+        <footer class="footer-configution">
+            <div class="centraliza-conteudo">
+                <div class="separacao">
+                    <article class="footer-content">
+                        <div>
+                            <h3>Sobre Mim</h3>
+                            <hr>
+                        </div>
+                        <p>Desenvolvedor Front-end apaixonado por criar experiências web incríveis.</p>
+                    </article>
+                    <article class="footer-content">
+                        <div>
+                            <h3>Links Rápidos</h3>
+                            <hr>
+                        </div>
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="portfolio.html">Portfólio</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </article>
+                    <article class="footer-content">
+                        <div>
+                            <h3>Redes Sociais</h3>
+                            <hr>
+                        </div>
+                        <figure>
+                            <a href="#"><!-- ícone fa-github --><span class="bi bi-github"></span></a>
+                            <a href="#"><!-- ícone fa-linkedin --><span class="bi bi-linkedin"></span></a>
+                            <a href="#"><!-- ícone fa-twitter --><span class="bi bi-twitter"></span></a>
+                        </figure>
+                    </article>
+                </div>
+                <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* style.css - Arquivo principal */
+/* variáveis globais*/
+:root{
+  --primary-color: #5a933c;
+  --primary-color-black: #48762e;
+  --secundary-color: #354d2a;
+  --background-light: #ecf0f1;
+  --background-white: #fff;
+  --text-black: #333;
+  --text-gray: #777;
+  --tittle-size: 2rem;
+  --subtittle-size: 1.5rem;
+  --normal-text-size: 1rem;
+  --small-text-size: 0.875rem;
+}
+/*configurações básicas de reset*/
+*, html{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; 
+}
+/*style dos elementos principais*/
+
+.content-page{
+  height: auto;
+  display: grid; /*o grid foi utilizado para separar as partes dos sites e definir seus tamanhos de maneira homogênea*/
+  grid-template-areas:
+      "header"
+      "main"
+      "footer" 
+  ;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+.header-style{
+  width: 100vw;
+  grid-area: 'header';
+  background-color: var(--background-white);
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  z-index: 2;
+}
+.main-content{
+  grid-area: 'main';
+  background-color: var(--background-light);
+  margin-top: 3rem;
+  padding: 4rem 2rem;
+}
+.footer-configution{
+  grid-area: 'footer';
+  background-color: var(--secundary-color);
+  padding: 3rem 2rem;
+}
+.centraliza-conteudo{
+  max-width: 1200px;
+}
+
+.light-green{
+  color: var(--primary-color);
+  font-size: inherit;
+}
+.gray{
+  color: var(--text-gray);
+  font-size: inherit;
+}
+
+
+.tittle{
+  font-size: var(--tittle-size);
+  font-weight: 700;
+}
+
+.button{
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}

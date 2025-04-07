@@ -1,0 +1,72 @@
+/* variáveis globais*/
+:root{
+  --primary-color: #5a933c;
+  --primary-color-black: #48762e;
+  --secundary-color: #354d2a;
+  --background-light: #ecf0f1;
+  --background-white: #fff;
+  --text-black: #333;
+  --text-gray: #777;
+  --tittle-size: 2rem;
+  --subtittle-size: 1.5rem;
+  --normal-text-size: 1rem;
+  --small-text-size: 0.875rem;
+}
+/*Contact style*/
+.contact-section .centraliza-conteudo{
+  max-width: 1200px;
+  display: grid;
+  grid-template-areas: 
+      "tittle ."
+      "form contact";
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+}
+.page-title{
+  grid-area: tittle;
+  font-size: var(--tittle-size);
+  font-weight: 700;
+  color: var(--text-black);
+  margin-bottom: 1rem;
+}
+.article-form{
+  grid-area: form;
+}
+
+
+.div-contact .material-symbols-outlined{
+  font-weight: 100;
+  color: var(--text-black);
+  margin-bottom: var(--small-text-size);
+}
+.div-contact h3{
+  font-size: var(--subtittle-size);
+  color: var(--text-black);
+  font-weight: 700;
+  margin-bottom: var(--small-text-size);
+}
+.div-contact p{
+  font-size: var(--normal-text-size);
+  color: var(--text-black);
+  font-weight: 400;
+}
+#iframe-maps{
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+
+/*Media query*/
+@media screen and (max-width: 992px){
+  .contact-section .centraliza-conteudo{
+    grid-template-areas: "tittle"
+                          "contact"
+                          "form";
+    grid-template-columns: 1fr;
+  }
+  #iframes-maps{
+    flex-grow: 1;
+  }
+}

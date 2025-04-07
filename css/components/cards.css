@@ -1,0 +1,54 @@
+/* variáveis globais*/
+:root{
+  --primary-color: #5a933c;
+  --primary-color-black: #48762e;
+  --secundary-color: #354d2a;
+  --background-light: #ecf0f1;
+  --background-white: #fff;
+  --text-black: #333;
+  --text-gray: #777;
+  --tittle-size: 2rem;
+  --subtittle-size: 1.5rem;
+  --normal-text-size: 1rem;
+  --small-text-size: 0.875rem;
+}
+/*Cards*/
+.cards{
+  display: flex; /*O flex foi utilizado para habilitar uma melhor distribuição dos tamanhos ocupados pelos elementos*/
+  flex-direction: column;
+}
+
+.img-cards{
+  flex-grow: 1;
+  position: relative;
+}
+
+.img-cards img{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+}
+.escurece{
+  transition: all 250ms ease-in;
+}
+
+
+.button-cards:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: transparent;
+}
+.cards:hover .button-cards{
+  display: initial;
+}
+.cards:hover .escurece{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #333333ce;
+  border-radius: 10px 10px 0 0;
+  top: 0;
+}

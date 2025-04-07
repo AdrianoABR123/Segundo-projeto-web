@@ -1,0 +1,50 @@
+/* variáveis globais*/
+:root{
+  --primary-color: #3498db;
+  --primary-color-black: #48762e;
+  --secundary-color: #354d2a;
+  --background-light: #ecf0f1;
+  --background-white: #fff;
+  --text-black: #333;
+  --text-gray: #777;
+  --tittle-size: 2rem;
+  --subtittle-size: 1.5rem;
+  --normal-text-size: 1rem;
+  --small-text-size: 0.875rem;
+}
+/*formatando e definindo regras*/
+
+.input.text{
+  max-width: 100%;
+  border: 1px solid var(--text-gray);
+  border-radius: 5px;
+}
+.article-form form{
+  width: 100%;
+  background-color: var(--background-white);
+  padding: var(--tittle-size);
+  display: flex;
+  flex-direction: column;
+  gap: var(--subtittle-size);
+}
+.label-form{
+  color: var(--text-black);
+  font-weight: 700;
+}
+.input{
+  padding: 0.75rem 1rem;
+}
+.selection{
+  padding: 0.75rem 1rem;
+  background-color: var(--background-light);
+  color: var(--text-black);
+  border-radius: 5px;
+  font-weight: 500;
+  border: 0;
+}
+.article-contact{
+  grid-area: contact;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
